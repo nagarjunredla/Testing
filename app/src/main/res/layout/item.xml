@@ -1,0 +1,65 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="10dp"
+    card_view:cardBackgroundColor="#FFF"
+    card_view:cardElevation="2dp" >
+    <RelativeLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="34sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_item"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/title_item"
+            android:id="@+id/author_item"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/author_item"
+            android:id="@+id/body_item"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <Button
+            android:layout_below="@id/body_item"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:text="More Info"
+            android:onClick="boom"
+            android:layout_width="wrap_content"/>
+        <Button
+            android:layout_below="@id/body_item"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:text="Read Article"
+            android:layout_width="wrap_content"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+
+            android:text="" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
